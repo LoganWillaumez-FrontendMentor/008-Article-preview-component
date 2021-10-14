@@ -87,6 +87,8 @@ h2 {
   left: 0;
   gap: 1em;
   transition: all ease-in-out 250ms;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .profile-active {
   opacity: 0;
