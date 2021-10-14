@@ -57,8 +57,8 @@ h2 {
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  overflow: hidden;
   background-color: #ffffff;
+  overflow: hidden;
 }
 .desk-img {
   height: 200px;
@@ -142,7 +142,6 @@ path {
     width: 730px;
     max-width: 730px;
     max-height: 280px;
-    overflow: visible;
   }
   .main-container {
     display: flex;
