@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -35,11 +37,20 @@ h2 {
   font-weight: 200;
   color: #6e8098;
 }
+.share-text {
+  text-transform: uppercase;
+  color: #9daec2;
+  font-weight: 200;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 5px;
+}
 /* Layout */
 .container {
   display: flex;
   width: 327px;
   max-width: 327px;
+  height: 504px;
   flex-direction: column;
   text-align: left;
   align-items: center;
@@ -58,17 +69,29 @@ h2 {
 }
 .main-container {
   padding: 0 25.25px;
+  height: 100%;
+  position: relative;
 }
 
-.profile-card {
+.profile,
+.profile-active {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
-}
-.profile {
-  display: flex;
+  height: 64px;
+  padding-left: 32px;
+  width: 100%;
+  /* background-color: #48556a; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
   gap: 1em;
+  transition: all ease-in-out 250ms;
+}
+.profile-active {
+  opacity: 0;
+}
+path {
+  transition: all ease-in-out 250ms;
 }
 .profile-img {
   width: 32px;
@@ -81,11 +104,35 @@ h2 {
 }
 .share-container {
   width: 32px;
+  cursor: pointer;
   height: 32px;
   background-color: #ecf2f8;
   border-radius: 50%;
   display: grid;
   place-items: center;
+  position: absolute;
+  right: 32px;
+  bottom: 17px;
+  transition: all ease-in-out 250ms;
+}
+
+.icons > * {
+  margin-right: 1rem;
+}
+
+.card.active .share-container {
+  background-color: #6e8098;
+}
+.card.active path {
+  fill: #ffffff;
+}
+/* Animation */
+.card.active .profile {
+  opacity: 0;
+}
+.card.active .profile-active {
+  opacity: 1;
+  background-color: #48556a;
 }
 @media only screen and (min-width: 730px) {
   .container {
@@ -93,13 +140,13 @@ h2 {
     width: 730px;
     max-width: 730px;
     max-height: 280px;
+    overflow: visible;
   }
   .main-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: space-between;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 32px 40px;
   }
   .desk-img {
@@ -121,5 +168,44 @@ h2 {
   }
   .profile-card {
     margin: 0;
+  }
+  .profile-active {
+    width: 248px;
+    border-radius: 15px;
+    height: 57px;
+    opacity: 0;
+    visibility: hidden;
+    right: -68px;
+    left: auto;
+    bottom: 74.4px;
+    transform: translateY(-10px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: opacity 0.8s;
+  }
+  .profile-active::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    bottom: -10px;
+    right: 42%;
+    transform: rotate(45deg);
+    background-color: #48556a;
+    z-index: -1;
+  }
+
+  .card.active .profile {
+    opacity: 1;
+  }
+  .card.active .profile-active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .share-container {
+    bottom: 35px;
+  }
+  .profile {
+    bottom: 20px;
   }
 }
