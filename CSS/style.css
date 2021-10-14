@@ -70,8 +70,8 @@ h2 {
 .main-container {
   padding: 0 25.25px;
   height: 100%;
+  width: 100%;
   position: relative;
-  overflow: hidden;
 }
 
 .profile,
