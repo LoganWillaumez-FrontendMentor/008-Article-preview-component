@@ -85,7 +85,7 @@ h2 {
   bottom: 0;
   left: 0;
   gap: 1em;
-  transition: all ease-in-out 250ms;
+  transition: opacity ease-in-out 250ms;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
@@ -94,7 +94,7 @@ h2 {
   background-color: #48556a;
 }
 path {
-  transition: all ease-in-out 250ms;
+  transition: opacity ease-in-out 250ms;
 }
 .profile-img {
   width: 32px;
@@ -116,7 +116,7 @@ path {
   position: absolute;
   right: 32px;
   bottom: 17px;
-  transition: all ease-in-out 250ms;
+  transition: opacity ease-in-out 250ms;
 }
 
 .icons > * {
@@ -177,7 +177,7 @@ path {
     height: 57px;
     opacity: 0;
     visibility: hidden;
-    right: -68px;
+    right: -71px;
     left: auto;
     bottom: 74.4px;
     transform: translateY(-10px);
