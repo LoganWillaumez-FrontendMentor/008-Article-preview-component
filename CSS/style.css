@@ -58,7 +58,6 @@ h2 {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   background-color: #ffffff;
-  overflow: hidden;
 }
 .desk-img {
   height: 200px;
@@ -66,6 +65,8 @@ h2 {
   object-fit: cover;
   object-position: 0 -15px;
   margin-bottom: 36px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .main-container {
   padding: 0 25.25px;
@@ -92,6 +93,7 @@ h2 {
 .profile-active {
   opacity: 0;
   background-color: #48556a;
+  z-index: 999;
 }
 path {
   transition: opacity ease-in-out 250ms;
