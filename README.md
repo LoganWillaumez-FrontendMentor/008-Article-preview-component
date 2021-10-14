@@ -1,6 +1,6 @@
 # Article-preview-component
 
-Front end mentor challenge : [Link]()
+Front end mentor challenge : [Link](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
 
 
 ## Screenshots
