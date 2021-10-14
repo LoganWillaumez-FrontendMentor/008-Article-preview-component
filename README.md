@@ -5,7 +5,7 @@ Front end mentor challenge : [Link]()
 
 ## Screenshots
 
-![App Screenshot](https://user-images.githubusercontent.com/60406970/137308611-2648b777-1100-44c2-b280-77b27fba8fb3.png)
+![App Screenshot](https://user-images.githubusercontent.com/60406970/137310060-e9e1adf9-4471-47dd-861b-2a95c151570f.png)
 
   
 ## Demo
