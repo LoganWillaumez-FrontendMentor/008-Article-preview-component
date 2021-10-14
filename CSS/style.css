@@ -68,6 +68,10 @@ h2 {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
+.icons > * {
+  cursor: pointer;
+}
+
 .main-container {
   padding: 0 25.25px;
   height: 100%;
@@ -93,7 +97,6 @@ h2 {
 .profile-active {
   opacity: 0;
   background-color: #48556a;
-  z-index: 999;
 }
 path {
   transition: opacity ease-in-out 250ms;

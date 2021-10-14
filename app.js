@@ -1,5 +1,5 @@
 let btn = document.querySelector('.share-container');
-let card = document.querySelector('.card')
+let card = document.querySelector('.card');
 let isClick = false;
 btn.addEventListener('click',clicker=>{
     if(isClick==false){
@@ -7,7 +7,7 @@ btn.addEventListener('click',clicker=>{
         isClick=true;
     }
     else{
-        card.classList.remove('active')
+        card.classList.remove('active');
         isClick=false;
     }
 })
