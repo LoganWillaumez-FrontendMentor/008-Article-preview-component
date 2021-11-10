@@ -10,6 +10,6 @@ Front end mentor challenge : [Link](https://www.frontendmentor.io/challenges/art
   
 ## Demo
 
-https://loganwillaumez.github.io/Article-preview-component/
+https://loganwillaumez-frontendmentor.github.io/008-Article-preview-component/
 
   
